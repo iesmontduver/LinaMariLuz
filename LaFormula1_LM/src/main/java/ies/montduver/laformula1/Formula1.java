@@ -134,11 +134,23 @@ public class Formula1 {
         */
         
         //Crear 5 escuderies
-        Escuderia McLaren = new Escuderia("McLaren", 125000000.0);
+        Escuderia McLaren = new Escuderia("McLaren", 125000000.0, 0);
+        Escuderia Ferrari = new Escuderia("Ferrari", 100000000.0, 0);
+        Escuderia Mercedes = new Escuderia("Mercedes", 140000000.0, 0);
+        Escuderia RedBull = new Escuderia("Red Bull", 135000000.0, 0);
+        Escuderia Toyota = new Escuderia("Toyota", 130000000.0, 0);
         
         //Crear els boxes de cada escuderia i afegir-los al pitLane
         Box box_ML = new Box(McLaren, 12);
         pitLane.add(box_ML);
+         Box box_FR = new Box(Ferrari, 15);
+        pitLane.add(box_FR);
+         Box box_MC = new Box(Mercedes, 11);
+        pitLane.add(box_MC);
+         Box box_RB = new Box(RedBull, 14);
+        pitLane.add(box_RB);
+         Box box_TY = new Box(Toyota, 10);
+        pitLane.add(box_TY);
         
 
         //Crear 10 pilots; 2 per escuderia
