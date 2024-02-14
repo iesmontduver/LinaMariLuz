@@ -18,6 +18,7 @@ public class Motor {
         this.tipo = tipo;
         this.cilindrada = Cilindrada;
         this.potencia = potencia;
+        
     }
 
     public String getTipo() {
