@@ -14,15 +14,15 @@ public class Cotxe {
     indicades com a atributs creades)
     */
     
-    //private final Rodes rodes;
-    //private final Motor motor;
-    //private final Xasis xasis;
-    //private Escuderia escuderia;
-    //private Pilot pilot;
-    //private double tempsCarrera;
+    private final Rodes rodes;
+    private final Motor motor;
+    private final Xasis xasis;
+    private Escuderia escuderia;
+    private Pilot pilot;
+    private double tempsCarrera;
     
     
-    /*public Cotxe(Escuderia escuderia, Rodes rodes, Motor motor, Xasis xasis) {
+    *public Cotxe(Escuderia escuderia, Rodes rodes, Motor motor, Xasis xasis) {
         this.escuderia = escuderia;
         this.rodes = rodes;
         this.motor = motor;
@@ -70,7 +70,9 @@ public class Cotxe {
 
         }                               
     }
-    */
+    System.out.println(pilot+"ha arrancat el seu motor "+  motor " montat amb rodes "+ tipo_neumatic);
+    
+    tempsCarrera= 0.0;
     
     /* TO DO: 
      1) Mostrarà un missatge per pantalla amb el contingut d’alguns atributs del cotxe. 
@@ -79,6 +81,9 @@ public class Cotxe {
     public void arrancarMotors(){
         
     }
+    System.out.println(pilot+"ha tingut un accident i ha d'abandonar la carrea ");
+    
+    tempsCarrera= 0.0;
     
     /* TO DO:
      1) Mostrarà un missatge per pantalla infromant de l’accident del cotxe.
