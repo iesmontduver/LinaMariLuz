@@ -55,7 +55,7 @@ public class Formula1 {
                     //Començar la carrera
                     if (granPremi != null) {
                         Cotxe guanyador = GranPremi.correr(granPremi, cotxes, pitLane);
-                        
+
                         int hores = (int) (guanyador.getTempsCarrera() / 3600);
                         int minuts = (int) ((guanyador.getTempsCarrera() - (hores * 3600)) / 60);
                         double segons = ((int) (guanyador.getTempsCarrera() - (hores * 3600) - (minuts * 60)) * 100.0) / 100.0;
@@ -90,7 +90,7 @@ public class Formula1 {
     }
 
     private static void mostrarQualify(List<Cotxe> cotxes) {
-        
+
         List<Cotxe> listaAux = new ArrayList<Cotxe>(cotxes); //copia de la original 
         List<Cotxe> qualificacio = new ArrayList<Cotxe>();
 
@@ -100,28 +100,29 @@ public class Formula1 {
 
             while (co.hasNext()) {
                 Cotxe el_cotxe = co.next();
-                
+
                 if (el_cotxe.getPilot().getPunts() > lider.getPilot().getPunts()) {
                     lider = el_cotxe;
                 }
             }
             qualificacio.add(lider);
-            listaAux.remove(listaAux.indexOf(lider));            
+            listaAux.remove(listaAux.indexOf(lider));
         }
-        System.out.println(MORADO + "\n\t\t     QUALIFICACIÓ DEL MUNDIAL DE PILOTS " + RESET);  
+        System.out.println(MORADO + "\n\t\t     QUALIFICACIÓ DEL MUNDIAL DE PILOTS " + RESET);
         System.out.println("\n\t\t\t*****************************");
         for (int i = 0; i < qualificacio.size(); i++) {
-            
+
             System.out.println("\t\t\t|" + BLUE + qualificacio.get(i).getPilot().getNom() + RESET + "\t | " + GREEN + qualificacio.get(i).getPilot().getPunts() + RESET + " punts |");
-            if (i != (qualificacio.size() -1))
+            if (i != (qualificacio.size() - 1)) {
                 System.out.println("\t\t\t|---------------------------|");
+            }
         }
         System.out.println("\t\t\t*****************************");
 
     }
 
     private static void crearEscuderies(List<Cotxe> cotxes, List<Box> pitLane) {
-        
+
         /* TO DO: 
            S’ha de completar el mètode per a crear instancies de: 
             • les escuderies (5),
@@ -131,31 +132,29 @@ public class Formula1 {
         
             He deixat implementat un exemple de cada i com s'afegeix a les llistes de cotxes i el pitLane
             
-        */
-        
+         */
         //Crear 5 escuderies
         Escuderia McLaren = new Escuderia("McLaren", 125000000.0, 0);
         Escuderia Ferrari = new Escuderia("Ferrari", 100000000.0, 0);
         Escuderia Mercedes = new Escuderia("Mercedes", 140000000.0, 0);
         Escuderia RedBull = new Escuderia("Red Bull", 135000000.0, 0);
         Escuderia Toyota = new Escuderia("Toyota", 130000000.0, 0);
-        
+
         //Crear els boxes de cada escuderia i afegir-los al pitLane
         Box box_ML = new Box(McLaren, 12);
         pitLane.add(box_ML);
-         Box box_FR = new Box(Ferrari, 15);
+        Box box_FR = new Box(Ferrari, 15);
         pitLane.add(box_FR);
-         Box box_MC = new Box(Mercedes, 11);
+        Box box_MC = new Box(Mercedes, 11);
         pitLane.add(box_MC);
-         Box box_RB = new Box(RedBull, 14);
+        Box box_RB = new Box(RedBull, 14);
         pitLane.add(box_RB);
-         Box box_TY = new Box(Toyota, 10);
+        Box box_TY = new Box(Toyota, 10);
         pitLane.add(box_TY);
-        
 
         //Crear 10 pilots; 2 per escuderia
         Pilot Norris = new Pilot("L. Norris", McLaren, 4);
-        Pilot Piastri= new Pilot("O. Piastri", McLaren, 81);
+        Pilot Piastri = new Pilot("O. Piastri", McLaren, 81);
         Pilot Leclerc = new Pilot("C.Leclerc", Ferrari, 16);
         Pilot Sainz = new Pilot("C.Sainz", Ferrari, 55;
         Pilot Hamilton = new Pilot("L. Hamilton", Mercedes, 44);
@@ -164,45 +163,40 @@ public class Formula1 {
         Pilot Perez = new Pilot("S.Perez", RedBull, 11);
         Pilot Salo = new Pilot("M.Salo", Toyota, 3);
         Pilot Zonta = new Pilot("R. Zonta", Toyota, 42);
-        
-        
 
         //Montar els 10 cotxes i afegir-los a la llista de cotxes
         Cotxe c4 = new Cotxe(McLaren, new Rodes("Michelín"), new Motor(), new Xasis(McLaren.getNom(), "F1", "Blanco"));
         cotxes.add(c4);
-       Cotxe c81 = new Cotxe(McLaren, new Rodes("Michelín"), new Motor(), new Xasis(McLaren.getNom(), "F1", "Blanco"));
+        Cotxe c81 = new Cotxe(McLaren, new Rodes("Michelín"), new Motor(), new Xasis(McLaren.getNom(), "F1", "Blanco"));
         cotxes.add(c81);
-       Cotxe c16 = new Cotxe(Ferrari, new Rodes("Michelín"), new Motor(), new Xasis(Ferrari.getNom(), "F1", "Roig"));
+        Cotxe c16 = new Cotxe(Ferrari, new Rodes("Michelín"), new Motor(), new Xasis(Ferrari.getNom(), "F1", "Roig"));
         cotxes.add(c16);
-       Cotxe c55 = new Cotxe(Ferrari, new Rodes("Michelín"), new Motor(), new Xasis(Ferrari.getNom(), "F1", "Roig"));
+        Cotxe c55 = new Cotxe(Ferrari, new Rodes("Michelín"), new Motor(), new Xasis(Ferrari.getNom(), "F1", "Roig"));
         cotxes.add(c55);
-       Cotxe c44 = new Cotxe(Mercedes, new Rodes("Michelín"), new Motor(), new Xasis(Mercedes.getNom(), "F1", "Verd"));
+        Cotxe c44 = new Cotxe(Mercedes, new Rodes("Michelín"), new Motor(), new Xasis(Mercedes.getNom(), "F1", "Verd"));
         cotxes.add(c44);
-       Cotxe c63 = new Cotxe(Mercedes, new Rodes("Michelín"), new Motor(), new Xasis(Mercedes.getNom(), "F1", "Verd"));
+        Cotxe c63 = new Cotxe(Mercedes, new Rodes("Michelín"), new Motor(), new Xasis(Mercedes.getNom(), "F1", "Verd"));
         cotxes.add(c63);
-       Cotxe c1 = new Cotxe(RedBull, new Rodes("Michelín"), new Motor(), new Xasis(RedBull.getNom(), "F1", "Blau"));
+        Cotxe c1 = new Cotxe(RedBull, new Rodes("Michelín"), new Motor(), new Xasis(RedBull.getNom(), "F1", "Blau"));
         cotxes.add(c1);
-       Cotxe c11 = new Cotxe(RedBull, new Rodes("Michelín"), new Motor(), new Xasis(RedBull.getNom(), "F1", "Blau"));
+        Cotxe c11 = new Cotxe(RedBull, new Rodes("Michelín"), new Motor(), new Xasis(RedBull.getNom(), "F1", "Blau"));
         cotxes.add(c11);
-       Cotxe c3 = new Cotxe(Toyota, new Rodes("Michelín"), new Motor(), new Xasis(McLaren.getNom(), "F1", "Gris"));
+        Cotxe c3 = new Cotxe(Toyota, new Rodes("Michelín"), new Motor(), new Xasis(McLaren.getNom(), "F1", "Gris"));
         cotxes.add(c3);
-       Cotxe c42 = new Cotxe(Toyota, new Rodes("Michelín"), new Motor(), new Xasis(McLaren.getNom(), "F1", "Gris"));
+        Cotxe c42 = new Cotxe(Toyota, new Rodes("Michelín"), new Motor(), new Xasis(McLaren.getNom(), "F1", "Gris"));
         cotxes.add(c42);
-       
+
         //Assignar un cotxe a cada pilot 
         c4.setPilot(Norris);
         c81.setPilot(Piastri);
         c16.setPilot(Leclerc);
         c55.setPilot(Saiz);
-        c44.setPilot(Hamilton));
+        c44.setPilot(Hamilton);
         c63.setPilot(Rusell);
         c1.setPilot(Verstaappen);
         c11.setPilot(Perez);
         c3.setPilot(Salo);
         c42.setPilot(Zonta);
-       
-        
-        
-        
-    }    
+
+    }
 }
