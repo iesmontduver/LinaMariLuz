@@ -13,6 +13,7 @@ public class Escuderia {
     private String nom;
     private double pressupost;
     private int punts;
+    
 
     public Escuderia(String nom, double pressupost, int punts) {
         this.nom = nom;

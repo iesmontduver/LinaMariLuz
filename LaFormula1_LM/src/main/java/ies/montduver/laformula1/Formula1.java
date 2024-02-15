@@ -155,6 +155,16 @@ public class Formula1 {
 
         //Crear 10 pilots; 2 per escuderia
         Pilot Norris = new Pilot("L. Norris", McLaren, 4);
+        Pilot Norris = new Pilot("O. Piastri", McLaren, 81);
+        Pilot Charles Leclerc = new Pilot("Charles Leclerc", Ferrari, 4);
+        Pilot Carlos Sainz = new Pilot("Carlos Sainz", Ferrari, 4);
+        Pilot Norris = new Pilot("L. Norris", Mercedes, 4);
+        Pilot Norris = new Pilot("L. Norris", Mercedes, 4);
+        Pilot Norris = new Pilot("L. Norris", RedBull, 4);
+        Pilot Norris = new Pilot("L. Norris", RedBull, 4);
+        Pilot Norris = new Pilot("L. Norris", Toyota, 4);
+        Pilot Norris = new Pilot("L. Norris", Toyota, 4);
+        
         
 
         //Montar els 10 cotxes i afegir-los a la llista de cotxes

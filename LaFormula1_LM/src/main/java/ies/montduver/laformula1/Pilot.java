@@ -22,6 +22,7 @@ public class Pilot {
         this.numero = numero;
         this.pilot = pilot;
         this.sou = sou;
+        
     }
 
     public String getNom() {
