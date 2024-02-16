@@ -165,25 +165,25 @@ public class Formula1 {
         Pilot Zonta = new Pilot("R. Zonta", Toyota, 42,0,45000);
 
         //Montar els 10 cotxes i afegir-los a la llista de cotxes
-        Cotxe c4 = new Cotxe(McLaren, new Rodes("Michelín"), new Motor(), new Xasis(McLaren.getNom(),"F1", "Blanco", 500, 4 ));
+        Cotxe c4 = new Cotxe(McLaren, new Rodes("Michelín"), new Motor(), new Xasis(McLaren.getNom(),"F1", "Blanco", 500.0, 4.0,2.0 ));
         cotxes.add(c4);
-        Cotxe c81 = new Cotxe(McLaren, new Rodes("Michelín"), new Motor(), new Xasis(McLaren.getNom(), "F1", "Blanco"));
+        Cotxe c81 = new Cotxe(McLaren, new Rodes("Michelín"), new Motor(), new Xasis(McLaren.getNom(), "F1", "Blanco",500.0, 4.0,2.0 ));
         cotxes.add(c81);
-        Cotxe c16 = new Cotxe(Ferrari, new Rodes("Michelín"), new Motor(), new Xasis(Ferrari.getNom(), "F1", "Roig"));
+        Cotxe c16 = new Cotxe(Ferrari, new Rodes("Michelín"), new Motor(), new Xasis(Ferrari.getNom(), "F1", "Roig",500.0, 4.0,2.0 ));
         cotxes.add(c16);
-        Cotxe c55 = new Cotxe(Ferrari, new Rodes("Michelín"), new Motor(), new Xasis(Ferrari.getNom(), "F1", "Roig"));
+        Cotxe c55 = new Cotxe(Ferrari, new Rodes("Michelín"), new Motor(), new Xasis(Ferrari.getNom(), "F1", "Roig",500.0, 4.0,2.0 ));
         cotxes.add(c55);
-        Cotxe c44 = new Cotxe(Mercedes, new Rodes("Michelín"), new Motor(), new Xasis(Mercedes.getNom(), "F1", "Verd"));
+        Cotxe c44 = new Cotxe(Mercedes, new Rodes("Michelín"), new Motor(), new Xasis(Mercedes.getNom(), "F1", "Verd",500.0, 4.0,2.0 ));
         cotxes.add(c44);
-        Cotxe c63 = new Cotxe(Mercedes, new Rodes("Michelín"), new Motor(), new Xasis(Mercedes.getNom(), "F1", "Verd"));
+        Cotxe c63 = new Cotxe(Mercedes, new Rodes("Michelín"), new Motor(), new Xasis(Mercedes.getNom(), "F1", "Verd",500.0, 4.0,2.0 ));
         cotxes.add(c63);
-        Cotxe c1 = new Cotxe(RedBull, new Rodes("Michelín"), new Motor(), new Xasis(RedBull.getNom(), "F1", "Blau"));
+        Cotxe c1 = new Cotxe(RedBull, new Rodes("Michelín"), new Motor(), new Xasis(RedBull.getNom(), "F1", "Blau",500.0, 4.0,2.0 ));
         cotxes.add(c1);
-        Cotxe c11 = new Cotxe(RedBull, new Rodes("Michelín"), new Motor(), new Xasis(RedBull.getNom(), "F1", "Blau"));
+        Cotxe c11 = new Cotxe(RedBull, new Rodes("Michelín"), new Motor(), new Xasis(RedBull.getNom(), "F1", "Blau",500.0, 4.0,2.0 ));
         cotxes.add(c11);
-        Cotxe c3 = new Cotxe(Toyota, new Rodes("Michelín"), new Motor(), new Xasis(McLaren.getNom(), "F1", "Gris"));
+        Cotxe c3 = new Cotxe(Toyota, new Rodes("Michelín"), new Motor(), new Xasis(McLaren.getNom(), "F1", "Gris",500.0, 4.0,2.0 ));
         cotxes.add(c3);
-        Cotxe c42 = new Cotxe(Toyota, new Rodes("Michelín"), new Motor(), new Xasis(McLaren.getNom(), "F1", "Gris"));
+        Cotxe c42 = new Cotxe(Toyota, new Rodes("Michelín"), new Motor(), new Xasis(McLaren.getNom(), "F1", "Gris",500.0, 4.0,2.0 ));
         cotxes.add(c42);
 
         //Assignar un cotxe a cada pilot 
