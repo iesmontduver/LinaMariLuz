@@ -17,25 +17,13 @@ public class Rodes {
     public Rodes(String marca) {
         this.marca = marca;
         this.numero = 4;
-        this.tipo_neumatic = (int) (Math.random() * 4) + 1;;
+        this.tipo_neumatic = (int) (Math.random() * 4) + 1;
     }
-    switch (tipo_neumatic) {
-        case 1:
-            System.out.println("Blando");
-            break;
-        case 2:
-            System.out.println("Medio");
-            break;
-        case 3:
-            System.out.println("Duro");
-            break;
-        case 4:
-            System.out.println("Lluvia");
-            break;
-        case 5:
-            System.out.println("Lluvia extrema");
-            break;
 
+    public Rodes(int numero, String marca, int tipo_neumatic) {
+        this.numero = numero;
+        this.marca = marca;
+        this.tipo_neumatic = tipo_neumatic;
     }
 
     public int getNumero() {
@@ -56,10 +44,33 @@ public class Rodes {
 
     /* TO DO: Tornarà un String segons el valor (int) de l’atribut tipo_neumatic*/
     public String getTipo_neumatic() {
-        return "";
+
+        switch (tipo_neumatic) {
+            case 1:
+                System.out.println("Blando");
+                break;
+            case 2:
+                System.out.println("Medio");
+                break;
+            case 3:
+                System.out.println("Duro");
+                break;
+            case 4:
+                System.out.println("Lluvia");
+                break;
+            case 5:
+                System.out.println("Lluvia extrema");
+                break;
+            default:
+
+                System.out.println("Desconegudes");
+
+        }
+
     }
 
     public void setTipo_neumatic(int tipo_neumatic) {
         this.tipo_neumatic = tipo_neumatic;
     }
+
 }
