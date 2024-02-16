@@ -13,14 +13,14 @@ public class Pilot {
     private String nom;
     private Escuderia escuderia;
     private int numero;
-    private int pilot;
+    private int punts;
     private double sou;
 
-    public Pilot(String nom, Escuderia escuderia, int numero, int pilot, double sou) {
+    public Pilot(String nom, Escuderia escuderia, int numero, int punts, double sou) {
         this.nom = nom;
         this.escuderia = escuderia;
         this.numero = numero;
-        this.pilot = pilot;
+        this.punts = punts;
         this.sou = sou;
         
     }
@@ -37,8 +37,8 @@ public class Pilot {
         return numero;
     }
 
-    public int getPilot() {
-        return pilot;
+    public int getPunts() {
+        return punts;
     }
 
     public double getSou() {
@@ -57,8 +57,8 @@ public class Pilot {
         this.numero = numero;
     }
 
-    public void setPilot(int pilot) {
-        this.pilot = pilot;
+    public void setPunts(int pilot) {
+        this.punts = pilot;
     }
 
     public void setSou(double sou) {
