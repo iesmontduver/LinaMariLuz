@@ -20,7 +20,7 @@ public class Cotxe {
     private Pilot pilot;
     private double tempsCarrera;
 
-    *public Cotxe(Escuderia escuderia, Rodes rodes, Motor motor, Xasis xasis) {
+    public Cotxe(Escuderia escuderia, Rodes rodes, Motor motor, Xasis xasis) {
         this.escuderia = escuderia;
         this.rodes = rodes;
         this.motor = motor;
@@ -73,24 +73,19 @@ public class Cotxe {
      2) Assignarà l’atribut tempsCarrera al valor 0.0   
      */
     public void arrancarMotors() {
-        System.out.println(pilot.getNom() + "ha arrancat el seu motor " + escuderia.getNom() " montat amb rodes "+ rodes.getTipo_neumatic());
+        System.out.println(pilot.getNom() + "ha arrancat el seu motor " + escuderia.getNom()" montat amb rodes "+ rodes.getTipo_neumatic() );
     
-    tempsCarrera = 0.0;
+        tempsCarrera = 0.0;
     }
 
-}
-
-/* TO DO:
+    /* TO DO:
      1) Mostrarà un missatge per pantalla infromant de l’accident del cotxe.
      2) Assignarà l’atribut tempsCarrera al valor 0.0
- */
-public void accident()
-{
-           System.out.println(pilot.getNom() +"ha tingut un accident i ha d'abandonar la carrea ");
-    
-    tempsCarrera= 0.0;
+     */
+    public void accident() {
+        System.out.println(pilot.getNom() + "ha tingut un accident i ha d'abandonar la carrea ");
+
+        tempsCarrera = 0.0;
     }
-              
-                
-    
+
 }

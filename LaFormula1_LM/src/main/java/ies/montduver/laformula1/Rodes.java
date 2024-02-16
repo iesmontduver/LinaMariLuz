@@ -43,7 +43,7 @@ public class Rodes {
     }
 
     /* TO DO: Tornarà un String segons el valor (int) de l’atribut tipo_neumatic*/
-    public String getTipo_neumatic() {
+    public void getTipo_neumatic() {
 
         switch (tipo_neumatic) {
             case 1:

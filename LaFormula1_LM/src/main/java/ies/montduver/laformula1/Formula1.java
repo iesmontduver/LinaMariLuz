@@ -153,19 +153,19 @@ public class Formula1 {
         pitLane.add(box_TY);
 
         //Crear 10 pilots; 2 per escuderia
-        Pilot Norris = new Pilot("L. Norris", McLaren, 4);
-        Pilot Piastri = new Pilot("O. Piastri", McLaren, 81);
-        Pilot Leclerc = new Pilot("C.Leclerc", Ferrari, 16);
-        Pilot Sainz = new Pilot("C.Sainz", Ferrari, 55;
-        Pilot Hamilton = new Pilot("L. Hamilton", Mercedes, 44);
-        Pilot Russell = new Pilot("G. Russell", Mercedes, 63);
-        Pilot Verstappen = new Pilot("M. Verstappen", RedBull, 1);
-        Pilot Perez = new Pilot("S.Perez", RedBull, 11);
-        Pilot Salo = new Pilot("M.Salo", Toyota, 3);
-        Pilot Zonta = new Pilot("R. Zonta", Toyota, 42);
+        Pilot Norris = new Pilot("L. Norris", McLaren, 4, 0,50000);
+        Pilot Piastri = new Pilot("O. Piastri", McLaren, 81, 0, 500000);
+        Pilot Leclerc = new Pilot("C.Leclerc", Ferrari, 16, 0,60000);
+        Pilot Sainz = new Pilot("C.Sainz", Ferrari, 55,0, 60000);
+        Pilot Hamilton = new Pilot("L. Hamilton", Mercedes, 44,0,40000);
+        Pilot Russell = new Pilot("G. Russell", Mercedes, 63,0,40000);
+        Pilot Verstappen = new Pilot("M. Verstappen", RedBull, 1,0,61000);
+        Pilot Perez = new Pilot("S.Perez", RedBull, 11,0,62000);
+        Pilot Salo = new Pilot("M.Salo", Toyota, 3,0,45000);
+        Pilot Zonta = new Pilot("R. Zonta", Toyota, 42,0,45000);
 
         //Montar els 10 cotxes i afegir-los a la llista de cotxes
-        Cotxe c4 = new Cotxe(McLaren, new Rodes("Michelín"), new Motor(), new Xasis(McLaren.getNom(), "F1", "Blanco"));
+        Cotxe c4 = new Cotxe(McLaren, new Rodes("Michelín"), new Motor(), new Xasis(McLaren.getNom(),"F1", "Blanco", 500, 4 ));
         cotxes.add(c4);
         Cotxe c81 = new Cotxe(McLaren, new Rodes("Michelín"), new Motor(), new Xasis(McLaren.getNom(), "F1", "Blanco"));
         cotxes.add(c81);
@@ -190,10 +190,10 @@ public class Formula1 {
         c4.setPilot(Norris);
         c81.setPilot(Piastri);
         c16.setPilot(Leclerc);
-        c55.setPilot(Saiz);
+        c55.setPilot(Sainz);
         c44.setPilot(Hamilton);
-        c63.setPilot(Rusell);
-        c1.setPilot(Verstaappen);
+        c63.setPilot(Russell);
+        c1.setPilot(Verstappen);
         c11.setPilot(Perez);
         c3.setPilot(Salo);
         c42.setPilot(Zonta);
