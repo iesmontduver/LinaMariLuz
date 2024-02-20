@@ -27,6 +27,13 @@ public class Cotxe {
         this.xasis = xasis;
     }
 
+    public Rodes getRodes() {
+        return rodes;
+    }
+
+   
+   
+
     public Pilot getPilot() {
         return pilot;
     }
@@ -73,7 +80,7 @@ public class Cotxe {
      2) Assignarà l’atribut tempsCarrera al valor 0.0   
      */
     public void arrancarMotors() {
-        System.out.println(pilot.getNom() + "ha arrancat el seu motor " + escuderia.getNom()" montat amb rodes "+ rodes.getTipo_neumatic() );
+        System.out.println(pilot.getNom() + "ha arrancat el seu motor " + escuderia.getNom()+" montat amb rodes "+ rodes.getTipo_neumatic());
     
         tempsCarrera = 0.0;
     }
