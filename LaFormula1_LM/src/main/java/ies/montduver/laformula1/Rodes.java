@@ -49,13 +49,13 @@ public class Rodes {
 
         switch (tipo_neumatic) {
             case 1:
-                paraula=("Blando");
+                paraula=("Blandes");
                 break;
             case 2:
-                paraula=("Medio");
+                paraula=("Medias");
                 break;
             case 3:
-               paraula=("Duro");
+               paraula=("Duras");
                 break;
             case 4:
                 paraula=("Lluvia");
